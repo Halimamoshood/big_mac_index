@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <title>Big Mac Index</title>
+    </head>
+
+    <body>
+        <header>
+            <h3>THE BIG MAC INDEX</h3>
+        </header>
+        
+        
+        <div class="container">
+
+            <div class="card">
+
+                <h2>(price of Big Mac in Different Countries)</h2>
+
+                <img src="/static/img/ham.jpg">
+                
+                <hr>
+                <img src="https://countryflagsapi.com/png/eu" alt="European Union flag"/>
+                <h3>Europe-area - ${{ BMI['EUR'] }}</h3>
+
+                <hr>
+                <img src="https://countryflagsapi.com/png/pl" alt="Poland flag"/>
+                <h3>Poland - ${{ BMI['POL'] }}</h3>
+
+                <hr>
+                <img src="https://countryflagsapi.com/png/dk" alt="Denmark flag"/>
+                <h3>Denmark - ${{ BMI['DNK'] }}</h3>
+            </div>
+            
+        </div>
+        
+    </body>
+</html>
